@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Past Simple: Regular & Irregular Verbs</title>
+<style>
+:root{--bg:#f3f5ff;--card:#fff;--tx:#1d2340;--mut:#6b7194;--pri:#5b4bff;--ok:#12a36b;--okb:#dff7ec;--bad:#e5484d;--badb:#fde6e6;--yel:#ffb703;--line:#dfe3f6;--soft:#eef0ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12142a;--card:#1c1f3d;--tx:#eef0ff;--mut:#a0a6d4;--line:#2f3466;--soft:#262a54;--okb:#12382c;--badb:#41202a;--pri:#8a7dff;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12142a;--card:#1c1f3d;--tx:#eef0ff;--mut:#a0a6d4;--line:#2f3466;--soft:#262a54;--okb:#12382c;--badb:#41202a;--pri:#8a7dff;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif}
+.hero{background:linear-gradient(135deg,#00b894,#5b4bff 55%,#ff4d8d);color:#fff;padding:36px 20px 56px;text-align:center}
+.hero h1{margin:0 0 6px;font-size:clamp(26px,5vw,42px)}.hero p{margin:0;opacity:.95}
+.top{position:sticky;top:0;z-index:10;background:var(--card);border-bottom:1px solid var(--line);padding:8px 12px;padding-top:calc(8px + env(safe-area-inset-top,0px))}
+.top nav{display:flex;gap:6px;overflow-x:auto;max-width:900px;margin:auto}
+.top a{white-space:nowrap;text-decoration:none;color:var(--tx);background:var(--soft);padding:5px 12px;border-radius:99px;font-size:14px;font-weight:600}
+.pg{max-width:900px;margin:6px auto 0;display:flex;align-items:center;gap:10px;font-size:13px;color:var(--mut)}
+.pg div{flex:1;height:8px;background:var(--soft);border-radius:9px;overflow:hidden}
+#bar{display:block;height:100%;width:0;background:linear-gradient(90deg,#12a36b,#ffb703);transition:width .4s}
+main{max-width:900px;margin:-28px auto 40px;padding:0 14px}
+.card{background:var(--card);border-radius:20px;padding:22px;margin-bottom:20px;box-shadow:0 6px 24px rgba(60,50,150,.12)}
+h2{margin:0 0 12px;font-size:24px}h3{margin:0 0 4px;font-size:18px}h3 span{color:var(--pri)}
+.ins{margin:0 0 12px;color:var(--mut)}
+.act{border-top:2px dashed var(--line);padding-top:16px;margin-top:18px}
+.sch{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.sc{border-radius:16px;padding:14px;color:#fff}.sc b{font-size:20px}.sc code{display:block;background:rgba(255,255,255,.2);border-radius:10px;padding:6px 10px;margin:8px 0;font-size:15px}
+.rules{background:var(--soft);border-radius:14px;padding:10px 14px;margin:14px 0;font-size:15px}
+.mc{background:var(--soft);border-radius:14px;padding:10px 14px;margin:8px 0}
+.btn,.chip{font:inherit;cursor:pointer;border:0;border-radius:99px;padding:8px 16px;font-weight:600;background:var(--pri);color:#fff}
+.btn:hover,.chip:hover{filter:brightness(1.1)}
+.chip{background:var(--soft);color:var(--tx);padding:6px 12px;margin:3px;border:2px solid var(--line)}
+.chip.on{border-color:var(--pri);background:var(--pri);color:#fff}
+.bank{margin:6px 0}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin-top:10px}
+.col{border:2px solid var(--line);border-radius:14px;min-height:110px;padding:8px;cursor:pointer;background:var(--soft)}
+.col b{display:block;text-align:center;margin-bottom:6px}.col .chip{background:var(--okb);border-color:var(--ok);cursor:default}
+.it{margin:12px 0;padding:10px 12px;border-radius:14px;background:var(--soft)}
+.q{margin-bottom:6px}.n{color:var(--pri);margin-right:6px}
+input{font:inherit;font-size:16px;color:var(--tx);background:var(--card);border:2px solid #9aa0d4;border-radius:12px;padding:8px 12px;width:100%;margin:4px 0}
+input.sm{width:150px;display:inline-block;padding:3px 10px;margin:0 4px}
+input:focus{outline:0;border-color:var(--pri)}input:disabled{background:var(--okb);border-color:var(--ok)}
+.it .btn{margin-top:4px}
+.fb{margin-top:6px;font-size:15px;font-weight:600}.fb.ok{color:var(--ok)}.fb.bad{color:var(--bad)}
+.wb{display:flex;flex-wrap:wrap;gap:6px;border:2px solid var(--pri);border-radius:14px;padding:10px;margin-bottom:10px;background:var(--soft)}.wb span{font-weight:700;color:var(--pri);padding:2px 10px}
+.vh{margin:14px 0 8px;font-size:18px}
+.vg{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.v{background:var(--soft);border-radius:14px;padding:10px 12px}
+.v .r{display:flex;align-items:center;gap:8px}.v b{font-size:18px;color:var(--pri)}.v .p{font-size:18px;font-weight:700;color:var(--ok)}
+.v i{color:var(--mut);font-size:14px;margin-right:auto}.v u{text-decoration:none;color:var(--mut)}
+.v button{border:0;background:var(--card);border-radius:50%;width:34px;height:34px;font-size:16px;cursor:pointer}
+</style></head><body>
+<header class="hero"><h1>🚀 Past Simple</h1><p>Regular & irregular verbs · +, − and ? · Beginner</p></header>
+<div class="top"><nav><a href="#warm">Warm-up</a><a href="#verbs">Verbs</a><a href="#prac">Practice</a></nav>
+<div class="pg"><span>Progress</span><div><i id="bar"></i></div><b id="sc">0 / 0</b></div></div>
+<main>
+<section class="card" id="warm"><h2>🔥 Warm-up: How to build Past Simple</h2>
+<div class="sch">
+<div class="sc" style="background:#12a36b"><b>➕ Positive</b><code>Subject + past form</code>She <u>played</u> football.<br>She <u>went</u> home.</div>
+<div class="sc" style="background:#e5484d"><b>➖ Negative</b><code>Subject + didn’t + verb</code>She <u>didn’t play</u> football.<br>She <u>didn’t go</u> home.</div>
+<div class="sc" style="background:#5b4bff"><b>❓ Question</b><code>Did + subject + verb?</code><u>Did</u> she <u>play</u> football?<br><u>Did</u> she <u>go</u> home?</div></div>
+<div class="rules"><b>Regular verbs:</b> + -ed (ask → ask<b>ed</b>) · + -d (move → move<b>d</b>) · double letter (stop → sto<b>pp</b>ed)<br><b>Irregular verbs:</b> a new word (go → <b>went</b>). Learn them!<br><b>Remember:</b> after <i>didn’t</i> and <i>Did</i> use the <b>base verb</b> (go, not went).</div>
+<h3>Quick check <span>(tap the answer)</span></h3><div id="wq"></div></section>
+<section class="card" id="verbs"><h2>📚 Verbs</h2><p class="ins">Tap 🔊 to listen. Repeat aloud: base verb → past form.</p>
+<h3 class="vh">Regular verbs <span>(Правильні дієслова)</span></h3><div class="vg" id="vr"></div>
+<h3 class="vh">Irregular verbs <span>(Неправильні дієслова)</span></h3><div class="vg" id="vi"></div></section>
+<div id="app"></div>
+</main>
+<script>
+const $=(s,e=document)=>e.querySelector(s),el=(t,c,h)=>{const e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e};
+const N=s=>s.toLowerCase().replace(/[^a-z0-9 ]/g,"").replace(/\s+/g," ").trim();
+const shuf=(a,s=0)=>a.map((x,i)=>[x,Math.sin((i+s+1)*127.1)]).sort((p,q)=>p[1]-q[1]).map(p=>p[0]);
+let done=0,total=0;
+const award=()=>{done++;upd()},upd=()=>{$("#bar").style.width=Math.round(done/Math.max(total,1)*100)+"%";$("#sc").textContent=done+" / "+total};
+function mcq(box,items){items.forEach(([q,o,k,e])=>{total++;let ok=0;const d=el("div","mc"),f=el("span","fb");d.append(q+" ");o.forEach((t,j)=>{const b=el("button","btn",t);b.style.margin="2px";b.onclick=()=>{if(ok)return;if(j==k){ok=1;award();f.className="fb ok";f.textContent=" ✅ Yes!"}else{f.className="fb bad";f.textContent=" ❌ "+e}};d.append(b)});d.append(f);box.append(d)})}
+mcq($("#wq"),[["Yesterday I ___ TV.",["watched","watch"],0,"Positive past: verb + -ed."],["She ___ to school yesterday.",["went","goed"],0,"go is irregular: go → went."],["She didn’t ___ the piano.",["played","play"],1,"After didn’t use the base verb."],["___ you see my dog?",["Did","Do"],0,"Past questions start with Did."]]);
+const V="exchange|ɪksˈtʃeɪndʒ|exchanged|ɪksˈtʃeɪndʒd|обмінювати|1;arrive|əˈraɪv|arrived|əˈraɪvd|прибувати|1;phone|fəʊn|phoned|fəʊnd|дзвонити|1;open|ˈəʊpən|opened|ˈəʊpənd|відкривати|1;wait|weɪt|waited|ˈweɪtɪd|чекати|1;talk|tɔːk|talked|tɔːkt|розмовляти|1;look|lʊk|looked|lʊkt|дивитися|1;ask|ɑːsk|asked|ɑːskt|питати|1;stop|stɒp|stopped|stɒpt|зупинятись|1;start|stɑːt|started|ˈstɑːtɪd|починати|1;move|muːv|moved|muːvd|рухати, переїжджати|1;finish|ˈfɪnɪʃ|finished|ˈfɪnɪʃt|завершувати|1;go|ɡəʊ|went|went|йти, ходити|0;have|hæv|had|hæd|мати|0;get|ɡet|got|ɡɒt|отримувати|0;see|siː|saw|sɔː|бачити|0;send|send|sent|sent|надсилати|0;sit|sɪt|sat|sæt|сидіти|0;tell|tel|told|təʊld|розповідати|0;write|raɪt|wrote|rəʊt|писати|0;say|seɪ|said|sed|казати|0;buy|baɪ|bought|bɔːt|купляти|0;leave|liːv|left|left|залишати|0;do|duː|did|dɪd|робити|0".split(";").map(x=>x.split("|"));
+const say=w=>{try{speechSynthesis.cancel();const s=new SpeechSynthesisUtterance(w);s.lang="en-GB";s.rate=.8;speechSynthesis.speak(s)}catch(e){}};
+V.forEach(([b,pb,p,pp,u,r])=>{const d=el("div","v"),row=(w,i)=>{const x=el("div","r",`<${w==b?"b":"span class=\"p\""}>${w}</${w==b?"b":"span"}><i>/${i}/</i>`),s=el("button","","🔊");s.onclick=()=>say(w);x.append(s);return x};d.append(row(b,pb),row(p,pp),el("div","",`<u>${u}</u>`));$(r=="1"?"#vr":"#vi").append(d)});
+const R={};
+R.sort=(b,a)=>{const cats=Object.keys(a.d),rl={"Regular":"Regular verbs end in -ed / -d (ask → asked).","Irregular":"Irregular verbs have a special past form (go → went)."};let sel=null;
+const bank=el("div","bank"),fb=el("div","fb"),cols=el("div","cols"),ws=[];cats.forEach(c=>a.d[c].forEach(w=>ws.push([w,c])));
+shuf(ws).forEach(([w,c])=>{total++;const x=el("button","chip",w);x.onclick=()=>{sel&&sel.classList.remove("on");sel=x;x.classList.add("on")};x._c=c;bank.append(x)});
+cats.forEach(c=>{const d=el("div","col","<b>"+c+"</b>");d.onclick=()=>{if(!sel){fb.className="fb bad";fb.textContent="Tap a word first 👆";return}
+if(sel._c==c){const w=sel.textContent;d.append(el("button","chip",w));sel.remove();sel=null;award();fb.className="fb ok";fb.textContent="✅ "+w+" → "+V.find(v=>v[0]==w)[2]}else{fb.className="fb bad";fb.textContent="❌ Not here. "+rl[sel._c]}};cols.append(d)});
+b.append(bank,fb,cols)};
+function txt(b,a,p){a.d.forEach(([q,ans],i)=>{total++;let tr=0,ok=0;const A0=ans.split("|")[0],r=el("div","it"),f=el("div","fb"),inp=el("input"),ln=el("div","q",`<b class="n">${i+1}.</b>`);inp.type="text";inp.autocomplete="off";inp.spellcheck=false;inp.placeholder=a.k=="fill"?"type…":"Type your answer here…";
+if(a.k=="fill"){const [x,y]=q.split("__");ln.append(x,inp,y||"");inp.className="sm"}else if(a.k=="tr")ln.append(el("span","",q));
+r.append(ln);if(a.k!="fill")r.append(inp);
+if(a.k=="ord"){const cw=el("div","bank");shuf(A0.replace(/[.?]/g,"").split(" "),i+3).forEach(w=>{const c=el("button","chip",w);c.onclick=()=>{if(!ok)inp.value=(inp.value+" "+w).trim()};cw.append(c)});const rs=el("button","chip","↺");rs.onclick=()=>{if(!ok)inp.value=""};cw.append(rs);r.append(cw)}
+const chk=()=>{if(ok)return;const v=inp.value,n=N(v);if(!n)return;
+if(ans.split("|").map(N).includes(n)){ok=1;award();f.className="fb ok";f.textContent="✅ Correct! "+(a.k=="fill"?"":A0);inp.disabled=true}
+else{tr++;const w=v.replace(/[’']/g,"");let m="❌ Not quite. ";m+=/\bdid(nt| not)?\s+(\w+\s+)?(?!need\b)\w+ed\b/i.test(w)||/\bdid(nt| not)?\s+(\w+\s+)?(went|had|got|saw|sent|sat|told|wrote|said|bought|left|did)\b/i.test(w.replace(/^did\b/i,"x"))?"After did/didn’t use the base verb (go, not went; play, not played). ":p.tip+" ";if(tr>1)m+="Answer: "+A0;f.className="fb bad";f.textContent=m}};
+inp.onkeydown=e=>{if(e.key=="Enter")chk()};const bt=el("button","btn","Check");bt.onclick=chk;r.append(bt,f);b.append(r)})}
+R.ord=R.fill=R.tr=txt;R.mc=(b,a)=>mcq(b,a.d);
+const I={sort:"Tap a word, then tap its column.",fill:"Type the correct form.",tr:"Write the negative sentence.",ord:"Tap the words to make a question.",mc:"Tap the correct answer."};
+const act=(n,t,k,d,m)=>({n,t,k,d,m,i:I[k]});
+const BK="went had got saw sent sat told wrote said bought left did",BR="arrive phone open wait talk look ask stop start move finish exchange";
+const f1=a=>a.map(v=>["",v[0]+" → __"].slice(0,1).concat([v[2]]));
+const fm=a=>a.map(v=>[v[0]+" → __",v[2]]);
+const P={id:"prac",t:"✏️ Practice",tip:"Regular: verb + -ed/-d. Irregular: use the special form (go → went).",acts:[
+Object.assign(act("1","Write the past form (regular)","fill",fm(V.slice(0,12))),{i:"Type the past form."}),
+Object.assign(act("2","Write the past form (irregular)","fill",fm(V.slice(12))),{i:"Type the past form. Learn them!"}),
+act("3","Regular or irregular?","sort",{"Regular":V.filter(v=>v[5]=="1").map(v=>v[0]),"Irregular":V.filter(v=>v[5]=="0").map(v=>v[0])}),
+act("4","Choose the correct form","mc",[["Yesterday I ___ to school.",["went","goed"],0,"go is irregular: go → went."],["She ___ the door.",["opened","open"],0,"Regular: open + -ed."],["We ___ a new bike last week.",["buyed","bought"],1,"buy is irregular: buy → bought."],["They ___ at the bus stop.",["waited","wait"],0,"Regular: wait + -ed."],["He ___ me a letter.",["writed","wrote"],1,"write is irregular: write → wrote."],["My dad ___ the car.",["stopped","stoped"],0,"stop → double p + -ed."],["I ___ my homework.",["did","done"],0,"do is irregular: do → did."],["She ___ a good film.",["saw","seed"],0,"see is irregular: see → saw."]]),
+act("5","Complete the sentences (irregular)","fill",[["I __ to the park yesterday.","went"],["We __ a big dinner last night.","had"],["She __ a present from her aunt.","got"],["They __ a cat in the garden.","saw"],["He __ an email to his teacher.","sent"],["The boy __ on the chair.","sat"],["Mum __ me a funny story.","told"],["I __ a letter to my friend.","wrote"],["He __ “Hello” to me.","said"],["We __ some milk at the shop.","bought"],["She __ home at five o’clock.","left"],["I __ my homework last night.","did"]],BK),
+act("6","Complete the sentences (regular)","fill",[["The bus __ at eight.","arrived"],["I __ my friend on the phone.","phoned"],["She __ the window.","opened"],["We __ for the bus.","waited"],["They __ about school.","talked"],["He __ at the picture.","looked"],["I __ the teacher a question.","asked"],["The rain __ at noon.","stopped"],["The class __ at nine.","started"],["We __ to a new flat.","moved"],["I __ my work early.","finished"],["They __ gifts at the party.","exchanged"]],BR),
+act("7","Write in the negative form","tr",[["I went to school yesterday.","I didn’t go to school yesterday."],["She had a big breakfast.","She didn’t have a big breakfast."],["We saw a film last night.","We didn’t see a film last night."],["He opened the window.","He didn’t open the window."],["They waited for the bus.","They didn’t wait for the bus."],["My mum bought bread.","My mum didn’t buy bread."],["I wrote an email.","I didn’t write an email."],["The lesson started at nine.","The lesson didn’t start at nine."]]),
+act("8","Write in order","ord",[["","Did you go to school yesterday?"],["","Did she write a letter?"],["","Did they arrive on time?"],["","Did he buy a new phone?"],["","Did you see my sister?"],["","Did the lesson start at nine?"]])]};
+const s=el("section","card");s.id=P.id;s.append(el("h2","",P.t));
+P.acts.forEach(a=>{const b=el("div","act");b.append(el("h3","","Activity "+a.n+". <span>"+a.t+"</span>"),el("p","ins",a.i));if(a.k=="fill"&&a.m)b.append(el("div","wb",a.m.split(" ").map(w=>"<span>"+w+"</span>").join("")));R[a.k](b,a,P);s.append(b)});
+$("#app").append(s);upd();
+</script></body></html>
